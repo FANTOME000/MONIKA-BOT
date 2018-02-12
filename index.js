@@ -46,7 +46,7 @@ client.on('message', msg => {
     
   
     else if (msg.content.startsWith('Salut Monika BOT')) {
-      msg.reply('Hey l'ami(e)');
+      msg.reply('Hey');
     }
   
 });
