@@ -37,7 +37,7 @@ client.on('message', msg => {
     }
     
   else if (msg.content === '--Monika') {
-      msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n by mikado");
+      msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n \n *created by mikado*");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
