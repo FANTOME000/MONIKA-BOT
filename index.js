@@ -59,7 +59,7 @@ client.on('message', msg => {
     client.on('guildMemberAdd', member => {
     console.log(':heavy_multiplication_x:Pas de Rôle:heavy_multiplication_x: ' + member.user.username + ' a rejoind le Serveur')
     client.channels.get("410786905026985990").send( member.user.toString() + ", bienvenue va dans <#412051988025442305> pour avoir les instructions :) n'oublie pas de lire <#410747083100913665> :wink:");
-    var role = member.guild.roles.find('id', '412272602686685187');
+    var role = member.guild.roles.find('name', ':heavy_multiplication_x:Pas de Rôle:heavy_multiplication_x:');
     member.addRole(role);
     
 });
