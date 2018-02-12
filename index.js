@@ -30,13 +30,19 @@ client.on('message', msg => {
   
   // Création d'une commande (message, reponse)
   
+    else if (msg.content === '--help') {
+      msg.reply("Salut c'est moi qui contrôle le game (je suis");
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
   else if (msg.content === '--Monika') {
       msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n by mikado");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
   
-    else if (msg.content === 'Mikado') {
+    else if (msg.content === '--Mikado') {
       msg.reply("C'est lui <@301913733536415755>, mon créateur");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
@@ -51,9 +57,9 @@ client.on('message', msg => {
 });
     
     client.on('guildMemberAdd', member => {
-    console.log('✖ Pas de Rôle ✖ ' + member.user.username + ' a rejoind le Serveur')
+    console.log(':heavy_multiplication_x:Pas de Rôle:heavy_multiplication_x: ' + member.user.username + ' a rejoind le Serveur')
     client.channels.get("410786905026985990").send( member.user.toString() + ", bienvenue va dans <#412051988025442305> pour avoir les instructions :) n'oublie pas de lire <#410747083100913665> :wink:");
-    var role = member.guild.roles.find('name', '✖ Pas de Rôle ✖');
+    var role = member.guild.roles.find('name', ':heavy_multiplication_x: Pas de Rôle :heavy_multiplication_x:');
     member.addRole(role);
     
 });
