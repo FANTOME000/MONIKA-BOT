@@ -31,8 +31,8 @@ client.on('message', msg => {
   // Création d'une commande (message, reponse)
   
   else if (msg.content === '--Monika') {
-      msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement") \n
-by mikado');
+      msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n
+by mikado");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
