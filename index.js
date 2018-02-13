@@ -1,15 +1,7 @@
-// on off
-// var
-const restify = require("restify");
-var server = restify.createServer();
-server.listen(process.env.PORT || 5000, function () {
-    console.log('%s listening to %s', server.name, server.url); 
-});
-
 // Anti-Crash mp
 
 if(message.channel.type === 'dm') return 
-message.reply("Vous ne pouvez pas m'utilisez en message privé.");
+   message.reply("Vous ne pouvez pas m'utilisez en message privé.");
 
 // module
 
