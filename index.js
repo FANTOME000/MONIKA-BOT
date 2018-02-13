@@ -11,7 +11,7 @@ server.listen(process.env.PORT || 5000, function () {
 if(message.channel.type === 'dm') return 
 message.reply("Vous ne pouvez pas m'utilisez en message privé.");
 
-// language utiliser par le bot 
+// module
 
 const Discord = require("discord.js");
 
