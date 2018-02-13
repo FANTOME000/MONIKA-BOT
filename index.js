@@ -8,7 +8,6 @@ server.listen(process.env.PORT || 5000, function () {
 
 // Anti-Crash mp
 
-Bah sur ton bot met ca 
 if(message.channel.type === 'dm') return message.reply("Vous ne pouvez pas m'utilisez en message privé.");
 
 // language utiliser par le bot 
