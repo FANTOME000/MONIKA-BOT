@@ -76,7 +76,7 @@ message.channel.send(':e_mail: Aide envoyé en message privé.')
       }
     }
   });
-}
+
 
 //Commande --hhelp no mp
 
