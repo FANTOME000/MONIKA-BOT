@@ -33,7 +33,7 @@ client.on('message', msg => {
   // Création d'une commande (message, reponse)
   
     else if (msg.content === '--help') {
-      msg.reply("Commande en cours de création");
+      msg.reply("Commande en cours de création...");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
