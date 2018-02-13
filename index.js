@@ -68,6 +68,11 @@ message.channel.send(':e_mail: Aide envoyé en message privé.')
     }
   });
 }
+// Anti-Crash mp
+
+if(message.channel.type === 'dm') return message.reply("Vous ne pouvez pas m'utilisez en message privé.");
+
+// var 
 
 //Commande --help no mp
 
