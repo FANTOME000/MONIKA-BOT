@@ -1,7 +1,6 @@
 // Anti-Crash mp
 
-if(message.channel.type === 'dm') return 
-   message.reply("Vous ne pouvez pas m'utilisez en message privé.");
+if(message.channel.type === 'dm') return message.reply("Vous ne pouvez pas m'utilisez en message privé.");
 
 // module
 
