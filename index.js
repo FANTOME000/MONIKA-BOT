@@ -29,46 +29,7 @@ client.on('ready', () => {
    client.setMaxListeners(1);
   });
 
-//Commande --help mp
 
-if(message.content.startsWith(prefix + ("help"))){
-message.channel.send(':e_mail: Aide envoyé en message privé.')
-  message.author.send({embed: {
-      color: 3447003,
-      author: {
-        name:  client.user.username,
-        icon_url: client.user.avatarURL
-      },
-      title: "Hey, regarde par ici",
-      description: "Voici la liste des commandes.",
-      fields: [{
-          name: "--Monika",
-          value: "Affiche la présentation du bot (la présentation actuelle temporaire car le bot est encore en developpement)"
-        },
-        {
-          name: "--Mikado",
-          value: "Affiche les information à propos du créateur du bot (oui je parle de moi a la 3eme personne)"
-        },
-        {
-          name: "Salut Monika BOT",
-          value: "Le bot vous répond par hey"
-        },
-        {
-          name: "--support",
-          value: "Affiche le support du bot"
-        },
-               
-        {
-          name: "-help",
-          value: "Affiche l'aide par message privé"
-        },
-        {
-          name: "-hhelp",
-          value: "Affiche l'aide dans le salon où la commande a été envoyé"
-        },
-        
-        }
-      ],
       timestamp: new Date(),
       footer: {
         icon_url: message.author.avatarURL,
