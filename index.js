@@ -126,7 +126,7 @@ message.channel.send({embed: {
       }
     }
   });
-}
+
 
 // création d'une commande (message, reponse)
 
