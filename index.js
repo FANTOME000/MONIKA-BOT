@@ -8,7 +8,7 @@ server.listen(process.env.PORT || 5000, function () {
 
 //other var 
 
-var prefix = "--"
+
 
 // Anti-Crash mp
 
@@ -76,7 +76,7 @@ message.channel.send(':e_mail: Aide envoyé en message privé.')
       }
     }
   });
-
+}
 
 //Commande --hhelp no mp
 
@@ -126,7 +126,7 @@ message.channel.send({embed: {
       }
     }
   });
-
+}
 
 // création d'une commande (message, reponse)
 
