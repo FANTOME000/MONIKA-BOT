@@ -6,14 +6,9 @@ server.listen(process.env.PORT || 5000, function () {
     console.log('%s listening to %s', server.name, server.url); 
 });
 
-//other var 
-
-
-
 // Anti-Crash mp
 
-if(message.channel.type === 'dm') return 
-   message.reply("Vous ne pouvez pas m'utilisez en message privé.");
+if(message.channel.type === 'dm') return message.reply("Vous ne pouvez pas m'utilisez en message privé.");
 
 // language utiliser par le bot 
 
@@ -28,7 +23,6 @@ client.on('ready', () => {
    client.user.setGame('Doki Doki');
    client.setMaxListeners(1);
   });
-
 // création d'une commande (message, reponse)
 
 client.on('message', msg => {
@@ -39,19 +33,13 @@ client.on('message', msg => {
   // Création d'une commande (message, reponse)
   
     else if (msg.content === '--help') {
-      msg.reply("Help");
+      msg.reply("Commande en cours de création");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
-  else if (msg.content === ('Monika')) {
+  else if (msg.content === '--Monika') {
       msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n \n *created by mikado*");
-      client.setMaxListeners(1);
-      client.setMaxListeners(1);
-    }
-          
-    else if (msg.content === '--support') {
-      msg.reply("Le bot a été hebergeur avec Heroku: \n https://heroku.com ");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
