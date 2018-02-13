@@ -30,7 +30,7 @@ client.on('ready', () => {
 
 //Commande --help mp
 
-if(message.content.startsWith(prefix + ("help")){
+if(message.content.startsWith(prefix + ("help"))){
 message.channel.send(':e_mail: Aide envoyé en message privé.')
   message.author.send({embed: {
       color: 3447003,
@@ -142,7 +142,7 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
-  else if (msg.content === (prefix + ('Monika')) {
+  else if (msg.content === (prefix + ('Monika'))) {
       msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n \n *created by mikado*");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
