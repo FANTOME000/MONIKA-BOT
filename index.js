@@ -12,7 +12,8 @@ var prefix = "--"
 
 // Anti-Crash mp
 
-if(message.channel.type === 'dm') return message.reply("Vous ne pouvez pas m'utilisez en message privé.");
+if(message.channel.type === 'dm') return 
+   message.reply("Vous ne pouvez pas m'utilisez en message privé.");
 
 // language utiliser par le bot 
 
@@ -35,8 +36,8 @@ message.channel.send(':e_mail: Aide envoyé en message privé.')
   message.author.send({embed: {
       color: 3447003,
       author: {
-        name:  bot.user.username,
-        icon_url: bot.user.avatarURL
+        name:  client.user.username,
+        icon_url: client.user.avatarURL
       },
       title: "Hey, regarde par ici",
       description: "Voici la liste des commandes.",
@@ -77,16 +78,16 @@ message.channel.send(':e_mail: Aide envoyé en message privé.')
   });
 }
 
-//Commande --help no mp
+//Commande --hhelp no mp
 
-//Commande --help mp
 
-if(message.content.startsWith(prefix + ("help"))){
+
+if(message.content.startsWith(prefix + ("hhelp"))){
 message.channel.send({embed: {
       color: 3447003,
       author: {
-        name:  bot.user.username,
-        icon_url: bot.user.avatarURL
+        name:  client.user.username,
+        icon_url: client.user.avatarURL
       },
       title: "Hey, regarde par ici",
       description: "Voici la liste des commandes.",
