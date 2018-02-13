@@ -29,16 +29,6 @@ client.on('ready', () => {
    client.setMaxListeners(1);
   });
 
-
-      timestamp: new Date(),
-      footer: {
-        icon_url: message.author.avatarURL,
-        text: "Command --help created by Clara \n Requete de © " + message.author.username
-      }
-    }
-  });
-}
-
 // création d'une commande (message, reponse)
 
 client.on('message', msg => {
