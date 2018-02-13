@@ -30,7 +30,7 @@ client.on('ready', () => {
 
 //Commande --help mp
 
-if(message.content.startsWith(prefix + ("help"))){
+if(message.content.startsWith(prefix + ("help")){
 message.channel.send(':e_mail: Aide envoyé en message privé.')
   message.author.send({embed: {
       color: 3447003,
