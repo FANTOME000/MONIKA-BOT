@@ -6,6 +6,10 @@ server.listen(process.env.PORT || 5000, function () {
     console.log('%s listening to %s', server.name, server.url); 
 });
 
+//other var 
+
+var prefix = "--"
+
 // Anti-Crash mp
 
 if(message.channel.type === 'dm') return message.reply("Vous ne pouvez pas m'utilisez en message privé.");
@@ -23,6 +27,106 @@ client.on('ready', () => {
    client.user.setGame('Doki Doki');
    client.setMaxListeners(1);
   });
+
+//Commande --help mp
+
+if(message.content.startsWith(prefix + ("help"))){
+message.channel.send(':e_mail: Aide envoyé en message privé.')
+  message.author.send({embed: {
+      color: 3447003,
+      author: {
+        name:  bot.user.username,
+        icon_url: bot.user.avatarURL
+      },
+      title: "Hey, regarde par ici",
+      description: "Voici la liste des commandes.",
+      fields: [{
+          name: "--Monika",
+          value: "Affiche la présentation du bot (la présentation actuelle temporaire car le bot est encore en developpement)"
+        },
+        {
+          name: "--Mikado",
+          value: "Affiche les information à propos du créateur du bot (oui je parle de moi a la 3eme personne)"
+        },
+        {
+          name: "Salut Monika BOT",
+          value: "Le bot vous répond par hey"
+        },
+        {
+          name: "--support",
+          value: "Affiche le support du bot"
+        },
+               
+        {
+          name: "-help",
+          value: "Affiche l'aide par message privé"
+        },
+        {
+          name: "-hhelp",
+          value: "Affiche l'aide dans le salon où la commande a été envoyé"
+        },
+        
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        icon_url: message.author.avatarURL,
+        text: "Command --help created by Clara \n Requete de © " + message.author.username
+      }
+    }
+  });
+}
+
+//Commande --help no mp
+
+//Commande --help mp
+
+if(message.content.startsWith(prefix + ("help"))){
+message.channel.send({embed: {
+      color: 3447003,
+      author: {
+        name:  bot.user.username,
+        icon_url: bot.user.avatarURL
+      },
+      title: "Hey, regarde par ici",
+      description: "Voici la liste des commandes.",
+      fields: [{
+          name: "--Monika",
+          value: "Affiche la présentation du bot (la présentation actuelle temporaire car le bot est encore en developpement)"
+        },
+        {
+          name: "--Mikado",
+          value: "Affiche les information à propos du créateur du bot (oui je parle de moi a la 3eme personne)"
+        },
+        {
+          name: "Salut Monika BOT",
+          value: "Le bot vous répond par hey"
+        },
+        {
+          name: "-support",
+          value: "Affiche le support du bot"
+        },
+        
+        {
+          name: "-help",
+          value: "Affiche l'aide par message privé"
+        },
+        {
+          name: "-hhelp",
+          value: "Affiche l'aide dans le salon où la commande a été envoyé"
+        },
+        
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        icon_url: message.author.avatarURL,
+        text: "Command --help created by Clara \n Requete de © " + message.author.username
+      }
+    }
+  });
+}
+
 // création d'une commande (message, reponse)
 
 client.on('message', msg => {
@@ -33,13 +137,19 @@ client.on('message', msg => {
   // Création d'une commande (message, reponse)
   
     else if (msg.content === '--help') {
-      msg.reply("Salut c'est moi qui contrôle le game (je suis");
+      msg.reply("Help");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
-  else if (msg.content === '--Monika') {
+  else if (msg.content === (prefix + ('Monika')) {
       msg.reply("Salut c'est moi qui contrôle le game (je suis en developpement) \n \n *created by mikado*");
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+          
+    else if (msg.content === '--support') {
+      msg.reply("Le bot a été hebergeur avec Heroku: \n https://heroku.com ");
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
