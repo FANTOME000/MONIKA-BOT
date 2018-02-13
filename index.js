@@ -86,7 +86,7 @@ if(message.content.startsWith(prefix + ("hhelp"))){
 message.channel.send({embed: {
       color: 3447003,
       author: {
-        name:  client.user.username,
+        name:  client.user.username
         icon_url: client.user.avatarURL
       },
       title: "Hey, regarde par ici",
